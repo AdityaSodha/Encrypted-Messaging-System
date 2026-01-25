@@ -1,55 +1,75 @@
+* {
+box-sizing: border-box;
+font-family: system-ui, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image: url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 60px;
+margin: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: radial-gradient(circle at top, #111, #000);
+color: #fff;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    backdrop-filter: blur(20px);
+width: 90%;
+max-width: 520px;
+padding: 24px;
+border-radius: 16px;
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(25px);
+box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333333;
+text-align: center;
+font-size: 22px;
+margin-bottom: 24px;
 }
 
-textarea, input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #cccccc;
-    background-color: rgba(255, 255, 255, 0.5);
+.block {
+margin-bottom: 18px;
+}
+
+span {
+font-size: 13px;
+opacity: 0.8;
+}
+
+textarea,
+input {
+width: 100%;
+padding: 12px;
+margin-top: 6px;
+border-radius: 10px;
+border: none;
+outline: none;
+background: rgba(0,0,0,0.6);
+color: #fff;
+resize: none;
+}
+
+textarea {
+min-height: 90px;
+}
+
+.row {
+display: flex;
+gap: 8px;
 }
 
 button {
-    margin: 10px 0;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 16px;
+padding: 12px 18px;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+background: linear-gradient(135deg,#4facfe,#00f2fe);
+color: #000;
+font-weight: 600;
 }
 
-button:hover {
-    background-color: #0056b3;
+button:active {
+transform: scale(0.96);
 }
